@@ -2,10 +2,10 @@
 
 > **The all-in-one family organizer — offline-first, no account required.**
 
-[![Download APK](https://img.shields.io/badge/Download-APK%20v0.9.4--beta-brightgreen?style=for-the-badge&logo=android)](https://family-hub-armypewe.replit.app/api/download/familyflow.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK%20v0.9.6--beta-brightgreen?style=for-the-badge&logo=android)](https://family-hub-armypewe.replit.app/api/download/familyflow.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B-blue?style=flat-square&logo=android)](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/latest)
 [![Beta](https://img.shields.io/badge/Status-Beta-orange?style=flat-square)](https://github.com/Castiel-Biz/FamilyFlow-APK/releases)
-[![Version](https://img.shields.io/badge/Version-0.9.4--beta-informational?style=flat-square)](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.4-beta)
+[![Version](https://img.shields.io/badge/Version-0.9.6--beta-informational?style=flat-square)](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.6-beta)
 
 ---
 
@@ -23,7 +23,7 @@ FamilyFlow is a private family organizer app for Android that keeps your househo
 | 💬 **Chat** | Private group chat for the whole family |
 | 💰 **Finance** | Income and expense tracker with recurring entries and projections |
 | 📝 **Notes** | Full-text searchable notes and memos |
-| 🤖 **AI Assistant** | Voice and text AI assistant powered by OpenAI |
+| 🤖 **AI Assistant** | Voice and text AI assistant powered by OpenAI — speaks back with on-device TTS |
 | 🎨 **Themes** | 8 built-in color themes (default: Patriot — red & navy) |
 
 ---
@@ -48,6 +48,8 @@ https://family-hub-armypewe.replit.app/api/download/familyflow.apk
 6. Tap **Install** on the confirmation screen.
 7. Once installed, tap **Open** to launch FamilyFlow.
 
+> **Tip:** Starting with v0.9.6, FamilyFlow can detect and install updates automatically from inside the app — you only need to sideload manually for the very first install.
+
 > **Tip:** After installing, you can turn off "Install unknown apps" again in your Android settings.
 
 ### Requirements
@@ -55,7 +57,7 @@ https://family-hub-armypewe.replit.app/api/download/familyflow.apk
 | | |
 |---|---|
 | **Android version** | 8.0 (Oreo) or higher — API level 26+ |
-| **Storage** | ~103 MB for the app |
+| **Storage** | ~104 MB for the app |
 | **Internet** | Only required for the AI assistant — everything else works fully offline |
 
 ---
@@ -71,6 +73,7 @@ FamilyFlow requests the following permissions. Here is exactly what each one doe
 | 📳 **Vibration** (`VIBRATE`) | Powers haptic feedback — the gentle tap you feel when pressing buttons or receiving alerts. |
 | 🔔 **Exact Alarms** (`USE_EXACT_ALARM`, `SCHEDULE_EXACT_ALARM`) | Allows the app to fire reminders at the precise time you set for calendar events and task due dates. Android requires this permission for time-sensitive notifications. |
 | 🔄 **Boot Receiver** (`RECEIVE_BOOT_COMPLETED`) | When your phone restarts, Android clears all scheduled reminders. This permission lets FamilyFlow restore your upcoming reminders automatically after a reboot so you never miss one. |
+| 📦 **Install Packages** (`REQUEST_INSTALL_PACKAGES`) | Allows the in-app updater to prompt you to install a downloaded APK update without leaving the app. Only used when you tap "Install Update." |
 
 No other permissions are requested or used. FamilyFlow does not access your contacts, location, camera, files, or any other sensitive resource.
 
@@ -106,6 +109,8 @@ We appreciate your patience and feedback as we work toward a stable v1.0 release
 
 | Version | Date | Highlights |
 |---|---|---|
+| [v0.9.6-beta](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.6-beta) | Apr 2026 | In-app APK updater with progress bar; Android 8+ unknown-sources gate with Open Settings + Try Again flow |
+| [v0.9.5-beta](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.5-beta) | Apr 2026 | On-device speech recognition (no internet needed for voice); 3-way voice routing; symmetric 3+AI+3 tab bar layout |
 | [v0.9.4-beta](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.4-beta) | Apr 2026 | Analytics patch — all events correctly wired, voice attribution fix, update banner guard |
 | [v0.9.3-beta](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.3-beta) | Apr 2026 | Firebase Analytics + Crashlytics, Expo OTA updates, in-app APK update banner |
 | [v0.9.2-beta](https://github.com/Castiel-Biz/FamilyFlow-APK/releases/tag/v0.9.2-beta) | Apr 2026 | Account security (change password, delete account), About & Permissions section in Profile |
@@ -130,10 +135,10 @@ Found a bug? Have a suggestion? We want to hear from you.
 | | |
 |---|---|
 | **Package name** | `com.familyflow.app` |
-| **Current version** | 0.9.4-beta (versionCode 7) |
+| **Current version** | 0.9.6-beta (versionCode 9) |
 | **Min Android** | 8.0 (API 26) |
 | **Architecture** | arm64-v8a, armeabi-v7a |
-| **Size** | ~103 MB |
+| **Size** | ~104 MB |
 
 ---
 
